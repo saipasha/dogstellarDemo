@@ -20,21 +20,21 @@ let gameStarted = false
 let interval
 let frames = 0
 let images = {
-  bisketo: "./images/bisketo.png",
-  farahChoose: "./images/farah-choose.png",
-  tomasaChoose: "./images/tomasa-choose.png",
-  planet1Bg:"./images/planet1Bg.png",
-  alien: "./images/alien.png",
-  mannPlanet: "./images/mann-planet-pixel.png",
-  mannFloor: "./images/manns-floor-pixel.gif",
-  mannPlanetFlip: "./images/mann-planet-pixel-flip.png",
-  edmundPlanet: "./images/edmunds-planet-pixel.gif",
-  edmundPlanetFlip: "./images/edmunds-planet-pixel-flip.png",
-  edmundFloor: "./images/edmunds-planet-floor-pixel.gif",
-  gargantua: "./images/Gargantua.gif",
-  snowball8bit: "./images/Snowball-8.png",
-  rock8bit: "./images/rock8bit.png",
-  cooperStation: "./images/cooper-station-pixel.gif",
+  bisketo: "./img/bisketo.png",
+  farahChoose: "./img/farah-choose.png",
+  tomasaChoose: "./img/tomasa-choose.png",
+  planet1Bg:"./img/planet1Bg.png",
+  alien: "./img/alien.png",
+  mannPlanet: "./img/mann-planet-pixel.png",
+  mannFloor: "./img/manns-floor-pixel.gif",
+  mannPlanetFlip: "./img/mann-planet-pixel-flip.png",
+  edmundPlanet: "./img/edmunds-planet-pixel.gif",
+  edmundPlanetFlip: "./img/edmunds-planet-pixel-flip.png",
+  edmundFloor: "./img/edmunds-planet-floor-pixel.gif",
+  gargantua: "./img/Gargantua.gif",
+  snowball8bit: "./img/Snowball-8.png",
+  rock8bit: "./img/rock8bit.png",
+  cooperStation: "./img/cooper-station-pixel.gif",
 }
 let sounds = {
   bgMusic: "./sounds/InterstellarTrim.mp3",
@@ -211,7 +211,7 @@ class BisketoP1 {
     this.width = 40
     this.height = 40
     this.imageBisketo = new Image()
-    this.imageBisketo.src = "./images/bisketo.png"
+    this.imageBisketo.src = "./img/bisketo.png"
     this.imageBisketo.onload = this.draw.bind(this)
   }
 
@@ -228,7 +228,7 @@ class BisketoP2 {
     this.width = 40
     this.height = 40
     this.imageBisketo = new Image()
-    this.imageBisketo.src = "./images/bisketo.png"
+    this.imageBisketo.src = "./img/bisketo.png"
     this.imageBisketo.onload = this.draw.bind(this)
   }
 
@@ -470,7 +470,7 @@ function youWinP1() {
   ctxP1.clearRect(0,0,canvasP1.width, canvasP1.height)
   clearInterval(interval)
   let winP1 = new Image()
-  winP1.src = "./images/cooper-station-pixel.gif"
+  winP1.src = "./img/cooper-station-pixel.gif"
   ctxP1.drawImage(winP1, 0, 0, canvasP1.width, canvasP1.height)
   ctxP1.font = "30px 'Major Mono Display'"
   ctxP1.fillStyle = "#000"
@@ -483,7 +483,7 @@ function youLoseP1() {
   ctxP1.clearRect(0,0,canvasP1.width, canvasP1.height)
   clearInterval(interval)
   let winP1 = new Image()
-  winP1.src = "./images/Gargantua.gif"
+  winP1.src = "./img/Gargantua.gif"
   ctxP1.drawImage(winP1, 0, 0, canvasP1.width, canvasP1.height)
   ctxP1.font = "30px 'Major Mono Display'"
   ctxP1.fillStyle = "#fff"
@@ -496,7 +496,7 @@ function youWinP2() {
   ctxP2.clearRect(0,0,canvasP2.width, canvasP2.height)
   clearInterval(interval)
   let winP2 = new Image()
-  winP2.src = "./images/cooper-station-pixel.gif"
+  winP2.src = "./img/cooper-station-pixel.gif"
   ctxP2.drawImage(winP2, 0, 0, canvasP2.width, canvasP2.height)
   ctxP2.font = "30px 'Major Mono Display'"
   ctxP2.fillStyle = "#000"
@@ -509,7 +509,7 @@ function youLoseP2() {
   ctxP2.clearRect(0,0,canvasP2.width, canvasP2.height)
   clearInterval(interval)
   let winP2 = new Image()
-  winP2.src = "./images/Gargantua.gif"
+  winP2.src = "./img/Gargantua.gif"
   ctxP2.drawImage(winP2, 0, 0, canvasP2.width, canvasP2.height)
   ctxP2.font = "30px 'Major Mono Display'"
   ctxP2.fillStyle = "#fff"
@@ -525,7 +525,7 @@ function clearCanvas () {
 
 function intro_screen() {
   let bgIntro = new Image()
-  bgIntro.src = "./images/Gargantua.gif"
+  bgIntro.src = "./img/Gargantua.gif"
   ctxP1.drawImage(bgIntro, 0, 0, canvasP1.width, canvasP1.height)
   ctxP2.drawImage(bgIntro, 0, 0, canvasP2.width, canvasP2.height)
   ctxP1.font = "30px 'Major Mono Display'"
