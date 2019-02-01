@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
+html, body {
+  background-size: 100vw;
+  background-repeat: none;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/jPLiQ-9/looped-4kuhd-nebula-galaxy-star-space-background-for-different-events-and-projects_rm2jcfxb__F0012.png');
+}
+
+.default {
+  display: flex;
+  justify-content: center;
+  font-family: Avenir;
+  font-size: 20px;
+  width: 250px;
+  font-weight: 700;
+  border-radius: 20px;
+  border: 2px solid gainsboro;
+  margin: 100px auto 100px auto;
+  padding: 40px;
+  color: gainsboro;
+}
+
+.choose{
+  background-color: gainsboro;
+  color: black;
+  font-weight: 600;
+}
+
+
+.off {
+  display: none;
+}
+
+.on {
+  display:flex;
+}
+
+#twoCanvas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+#logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  padding-top: 10px;
+  margin-left: 20px
+}
+
+#logo img {
+  height: 100px;
+  margin: 0;
+}
+
+#instructions {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.key {
+  width: 40px;
+  height: 40px;
+  border: 2px solid gainsboro;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: white;
+  font-family: Avenir;
+  font-size: 20px;
+  margin: 10px 5px 5px 5px;
+}
+
+.key-press {
+  background-color: gainsboro;
+  color: black;
+  font-weight: 600;
+}
+
+#keys-left {
+  height: 100px;
+  width: 250px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#keys-right {
+  height: 100px;
+  width: 250px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.player {
+  color: white;
+  font-family: Avenir;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.player-time {
+  color: white;
+  font-family: Avenir;
+  font-size: 15px;
+  margin: 5px auto 10px 100px;
+}
+
+#game-instructions {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  width: 1100px;
+  flex-wrap: wrap;
+  color: whitesmoke;
+  font-family: Avenir;
+  margin: auto;
+}
+
+#title {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+/* #game-instructions img {
+  width: 20px;
+  height: 20px;
+} */
+
+#storyline p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+
+/* .bottom-key {
+  align-items: flex-end;
+  margin-top: 50px;
+}
+
+.top-key {
+  align-self: flex-start;
+  margin: 20px 40px 0 40px;  
+} */
+
+
+/* #keys-right {
+  display: flex;
+  flex-direction: row;
+} */

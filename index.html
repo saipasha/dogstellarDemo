@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <section id="container">
+    <article id="logo">
+      <img src="./images/dogstellar-1.png"/>
+    </article>
+    <article id="twoCanvas">
+      <h4 id="onePlayer" class="default">Press 1 for Lone Dog</h4>
+      <h4 id="twoPlayer" class="default">Press 2 for Pack Dog</h4>
+      <canvas id="player1" class="off" width="584" height="352"></canvas>
+      <canvas id="player2" class="off" width="584" height="352"></canvas>
+    </article>
+    <article id="main">
+      <div id="story"></div>
+      <div id="canvas"></div>
+      <div id="instructions">
+        <div id="keys-left" class="off">
+          <p id="w-key" class="w key">W</p>
+          <p id="a-key" class="a key">A</p>
+          <p id="s-key" class="s key">S</p>
+          <p id="d-key" class="d key">D</p>
+          <p class="player">PLAYER 1</p>
+            <h2 id="timeP1" class="player-time">Mission</h2>
+          </div>
+
+        
+        <div id="keys-right" class="off">
+          <p id="up-key" class="key">&#9650</p>
+          <p id="left-key" class="key">&#9664</p>
+          <p id="down-key" class="key">&#9660</p>
+          <p id="right-key" class="key">&#9654</p>
+          <p class="player">PLAYER 2</p>
+          <h2 id="timeP2" class="player-time">Mission</h2>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div id="game-instructions">
+        <p id="title"> ASTRONAUT DOGS! </p>
+          <p> Grab as many bisketos as possible with S or &#9660 and survive until you mission
+          time is over. The dog with more bisketos wins. </p>
+      </div>
+      <div id="score"></div>
+      <div id="reset"></div>
+    </article>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
